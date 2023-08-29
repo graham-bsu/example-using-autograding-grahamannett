@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "run autogradding",
+      "setup": "wget https://gist.githubusercontent.com/grahamannett/aa408820a0613fb66b0d1b038eaf9b18/raw/d1e3380f9371bc06622a63849b1e77f230be1e6c/p1-tests.sh -O runner.sh && chmod +x runner.sh",
+      "run": "./runner.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
