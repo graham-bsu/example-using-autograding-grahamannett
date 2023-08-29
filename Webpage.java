@@ -2,7 +2,7 @@
  * A simple class that represents a web site page, which 
  * consists of the  web site page URL and the contents as a string.
  *
- * @author CS321 instructors
+ * @author CS321 instructors  should run tests
  */
 public class Webpage implements KeyInterface<String> {
 
