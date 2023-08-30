@@ -9,6 +9,16 @@
       "comparison": "included",
       "timeout": 10,
       "points": 25
+    },
+    {
+      "name": "java test case",
+      "setup": "",
+      "run": "gradle test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
     }
   ]
 }
