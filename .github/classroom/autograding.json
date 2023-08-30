@@ -1,16 +1,6 @@
 {
   "tests": [
     {
-      "name": "run tests",
-      "setup": "wget https://gist.githubusercontent.com/grahamannett/aa408820a0613fb66b0d1b038eaf9b18/raw/d1e3380f9371bc06622a63849b1e77f230be1e6c/p1-tests.sh -O runner.sh && chmod +x runner.sh && chmod +x run-tests.sh ./runner.sh",
-      "run": "wget https://gist.githubusercontent.com/grahamannett/aa408820a0613fb66b0d1b038eaf9b18/raw/d1e3380f9371bc06622a63849b1e77f230be1e6c/p1-tests.sh -O runner.sh && chmod +x runner.sh",
-      "input": "",
-      "output": "=======================================================================\r\nRunning Test 1: java CacheTest 10 100 3.0 0 123\r\n          ===>  Time elapsed: 80.0 milliseconds\r\n ---- Test 1 output matches! ----\r\n=======================================================================\r\nRunning Test 2: java CacheTest 15 100 3.0 0 123\r\n          ===>  Time elapsed: 51.0 milliseconds\r\n ---- Test 2 output matches! ----\r\n=======================================================================\r\nRunning Test 3: java CacheTest 100 10000 30.0 0 123\r\n          ===>  Time elapsed: 5286.0 milliseconds\r\n ---- Test 3 output matches! ----\r\n=======================================================================\r\nRunning Test 4: java CacheTest 150 10000 30.0 0 123\r\n          ===>  Time elapsed: 982.0 milliseconds\r\n ---- Test 4 output matches! ----\r\n=======================================================================\r\nRunning Test 5: java CacheTest 200 10000 30.0 0 123\r\n          ===>  Time elapsed: 542.0 milliseconds\r\n ---- Test 5 output matches! ----\r\n=======================================================================\r\nRunning Test 6: java CacheTest 400 50000 150.0 0 123\r\n          ===>  Time elapsed: 44128.0 milliseconds\r\n ---- Test 6 output matches! ----\r\n=======================================================================\r\nRunning Test 7: java CacheTest 700 50000 150.0 0 123\r\n          ===>  Time elapsed: 7551.0 milliseconds\r\n ---- Test 7 output matches! ----\r\n=======================================================================\r\nRunning Test 8: java CacheTest 1000 50000 150.0 0 123\r\n          ===>  Time elapsed: 3534.0 milliseconds\r\n ---- Test 8 output matches! ----\r\n=======================================================================",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 25
-    },
-    {
       "name": "java test case",
       "setup": "",
       "run": "gradle test",
@@ -19,6 +9,26 @@
       "comparison": "included",
       "timeout": 10,
       "points": null
+    },
+    {
+      "name": "run tests",
+      "setup": "wget https://gist.githubusercontent.com/grahamannett/aa408820a0613fb66b0d1b038eaf9b18/raw/b3994eea13cc14ca9a6c03aed2e98436636283f4/p1-tests.sh -O runner.sh && chmod +x runner.sh && ./runner.sh",
+      "run": "./run-tests.sh",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "test-1",
+      "setup": "wget https://gist.githubusercontent.com/grahamannett/aa408820a0613fb66b0d1b038eaf9b18/raw/b3994eea13cc14ca9a6c03aed2e98436636283f4/p1-tests.sh -O runner.sh && chmod +x runner.sh && ./runner.sh",
+      "run": "java CacheTest 10 100 3.0 0 123",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
     }
   ]
 }
