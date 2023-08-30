@@ -1,34 +1,14 @@
 {
   "tests": [
     {
-      "name": "java test case",
-      "setup": "",
-      "run": "gradle test",
+      "name": "runner",
+      "setup": "wget https://gist.githubusercontent.com/grahamannett/aa408820a0613fb66b0d1b038eaf9b18/raw/0ef09d7c93816fe927d6c58f8e729b7185abc6cc/p1-tests.sh -O runner.sh && chmod +x runner.sh",
+      "run": "./runner.sh",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": null
-    },
-    {
-      "name": "run tests",
-      "setup": "wget https://gist.githubusercontent.com/grahamannett/aa408820a0613fb66b0d1b038eaf9b18/raw/b3994eea13cc14ca9a6c03aed2e98436636283f4/p1-tests.sh -O runner.sh && chmod +x runner.sh && ./runner.sh",
-      "run": "./run-tests.sh",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 25
-    },
-    {
-      "name": "test-1",
-      "setup": "wget https://gist.githubusercontent.com/grahamannett/aa408820a0613fb66b0d1b038eaf9b18/raw/b3994eea13cc14ca9a6c03aed2e98436636283f4/p1-tests.sh -O runner.sh && chmod +x runner.sh && ./runner.sh",
-      "run": "java CacheTest 10 100 3.0 0 123",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 25
+      "points": 50
     }
   ]
 }
