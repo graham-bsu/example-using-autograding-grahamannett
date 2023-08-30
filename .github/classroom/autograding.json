@@ -1,9 +1,9 @@
 {
   "tests": [
     {
-      "name": "runner",
-      "setup": "wget https://gist.githubusercontent.com/grahamannett/aa408820a0613fb66b0d1b038eaf9b18/raw/0ef09d7c93816fe927d6c58f8e729b7185abc6cc/p1-tests.sh -O runner.sh && chmod +x runner.sh",
-      "run": "./runner.sh",
+      "name": "javatestcase",
+      "setup": "",
+      "run": "gradle test",
       "input": "",
       "output": "",
       "comparison": "included",

@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // JUnit Jupiter API for writing tests
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.0'
+
+    // JUnit Jupiter Engine for running tests
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.0'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['.']  // Main source code is in the root directory
+        }
+    }
+    test {
+        java {
+            srcDirs = ['.']  // Test code is also in the root directory
+        }
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
