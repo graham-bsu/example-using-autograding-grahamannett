@@ -2,8 +2,8 @@
   "tests": [
     {
       "name": "grader",
-      "setup": "wget https://raw.githubusercontent.com/grahamannett/cs-grading/main/cs321/autograder.sh -O runner.sh && chmod +x runner.sh",
-      "run": "./runner.sh p1-webpage-cache",
+      "setup": "wget https://raw.githubusercontent.com/grahamannett/cs-grading/main/cs321/autograder.sh -O autograder.sh && chmod +x autograder.sh",
+      "run": "./autograder.sh p1-webpage-cache",
       "input": "",
       "output": "",
       "comparison": "included",
