@@ -1,14 +1,14 @@
 {
   "tests": [
     {
-      "name": "javatestcase",
-      "setup": "",
-      "run": "gradle test",
+      "name": "grader",
+      "setup": "wget https://raw.githubusercontent.com/grahamannett/cs-grading/main/cs321/autograder.sh -O runner.sh && chmod +x runner.sh",
+      "run": "./runner.sh p1-webpage-cache",
       "input": "",
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 50
+      "points": 0
     }
   ]
 }

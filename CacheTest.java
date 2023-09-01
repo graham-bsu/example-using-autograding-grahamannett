@@ -1,7 +1,7 @@
 /*
  * Design and write a test program, CacheTest.java, that uses the WebpageGenerator and the Cache to process Webpages as described in the next bullet. The usage should be as follows:
-java CacheTest <cache-size> <number-of-Webpages>  
-               <standard-deviation> <debug-level=0-3> [<seed>] 
+java CacheTest <cache-size> <number-of-Webpages>
+               <standard-deviation> <debug-level=0-3> [<seed>]
 where:
 <cache size>: The size of the cache.
 <number-of-Webpages>: The amount of Webpages to generate.
@@ -14,7 +14,7 @@ where:
 [<seed>]:  Square brackets denote an optional argument. Using a seed ensures simulation can be repeated for a random number generator
  */
 
-
+SHOULD THROW COMPILE ERROR!!!
 public class CacheTest {
     public static void main(String[] args) {
         if (args.length < 4) {
@@ -29,12 +29,12 @@ public class CacheTest {
         if (args.length == 5) {
             seed = Integer.parseInt(args[4]);
         }
-        
+
         WebpageGenerator generator = new WebpageGenerator(numWebpages, stdDev, seed);
         Cache<String, Webpage> cache = new Cache<String, Webpage>(cacheSize);
         long timeStart = System.currentTimeMillis();
         for (int i = 0; i < numWebpages; i++) {
-            
+
             String url = generator.getURL();
             Webpage webpage = cache.get(url);
             if (webpage == null) {
